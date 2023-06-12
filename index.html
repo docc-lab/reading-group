@@ -2,10 +2,15 @@
 layout: default
 title: "Home"
 ---
+<html>
+<body>
 Weekly reading group hosted by [DOCC Lab](https://docclab.cs.tufts.edu/) at Tufts University. Held on Thursdays 1-2pm. If you have any interest in attending (in-person or remote), reach out to me at darby [DOT] huye [AT] tufts [DOT] edu.
+</body>
 
 {% if site.show_excerpts %}
   {% include home.html %}
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
+
+</html>
