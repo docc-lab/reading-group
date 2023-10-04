@@ -1,0 +1,12 @@
+---
+title:  "AutoArmor summary & discussion"
+layout: post
+---
+
+Research Question: How to automatically generate least privileged inter-service access control policies for microservices and to keep them up to date as the application evolves? 
+
+Key Contributions: They assume that the source code encodes the expected normal behavior or legal inter-service access of a microservice application. 1)They develop a static analysis-based mechanism that uses backward taint propagation to extract inter-service invocation logic from source code. 2) They design a novel data structure called permission graph to represent inter-service invocation permissions. A permission graph captures the key feature of microservices and that is that multiple versions of a service can co-exist and they may have different access policies. Hence, the permission graph contains two types of permission nodes,  service nodes that describe the permissions common to all versions of the service and version nodes that describe the permissions specific only to that version. As a result of this design, there are two types of edges in a permission graph, one for connecting a service node and a version, and the other for a possible inter-service invocation. Each permission node is represented by a hash-based skeleton tree that stores the details of inter-service invocations. This tree structure enables quick comparisons between permission nodes, therefore updating the permission graph is fast after a new (version of a) service is launched or an old (version of a) service is deprecated. They implement a prototype of the system AUTOARMOR on Kubernetes and Istio,  and evaluate its effectiveness, analysis time, security evaluation, efficiency, scalability and end-to-end performance on popular open-source microservice applications. (Fortunately or unfortunately, they did not use neither DeathStarBench nor TrainTicket. They did use Bookinfo though.)
+
+Opportunities for future work: 1) This work concerns the cases where each service is used by only one application. One direction for  future work is to extend AUTOARMOR to effectively generate access policies for services used in multiple applications. 2) This work does static analysis on the source code, and they may extend to develop binary analysis for other use cases. 
+
+Presenter: Max Liu
