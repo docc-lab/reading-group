@@ -1,0 +1,7 @@
+---
+title:  "Watching the watchmen: Least privilege for managed network services"
+layout: post
+---
+Relegating network management to third-party tools is less of a monetary cost, but it is still a cost -- managed service providers (MSPs) are in a unique position to use their services to exploit the networks they manage on the behalf of companies that depend on them, like hospitals and banks. These providers have an inordinate amount of privilege when it comes to directly manipulating the systems they oversee, and a number of exploits have utilized this unique access to deploy ransomware, extract sensitive data, and execute more attacks. The authors are curious whether this access control can be bolstered by  emulating these systems with a digital twin, and then revising the technician's proposed changes before releasing them on the real thing, all with little overhead. To this end, they implement Heimdall, which presents such a digital twin that only mimics topology, not the sensitive data it holds, and then they present a verification framework for these decisions as well. They also found from preliminary experiments that Heimdall generated at most 42 seconds of latency for the most complex problems faced by their resident technicians. Some problem areas this paper stirred curiosity towards include exploiting the verification framework (since it is hosted in SGX, which has a reputation for leaking among other vulnerabilities), as well as similar work with digital twins of microservice topology.
+
+Presenter: Sarah Abowitz
