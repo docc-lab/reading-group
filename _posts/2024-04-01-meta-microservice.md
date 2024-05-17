@@ -1,0 +1,12 @@
+---
+title: "Lifting the veil on Meta’s microservice architecture: Analyses of topology and request workflows"
+layout: post
+---
+
+Research Question: The primary research question addressed is to understand and characterize the distinctive features of Meta’s large-scale microservice architecture. The study investigates how the topology and request workflows within this architecture differ from conventional microservice designs and the implications these differences have for developing and researching tools that utilize microservice topology and request traces.
+
+Key Contributions: The paper makes several significant contributions to the understanding of large-scale microservice architectures. Firstly, it characterizes Meta's microservice topology, revealing it as extremely heterogeneous and in constant flux, with numerous software entities that do not conform to traditional microservice definitions. This insight underscores the complexity and dynamic nature of Meta's architecture. Secondly, the study analyzes request workflows, finding them highly dynamic but locally predictable using service and endpoint names. This predictability, despite overall complexity, provides valuable insights into the system's behavior. Lastly, the research quantifies the impact of obfuscating factors on microservice measurement, highlighting the challenges of analyzing such systems and suggesting areas for improvement in tool development​.
+
+Opportunities for future work: The paper identifies several promising avenues for future research. One key area is the development of advanced tools tailored to the dynamic and heterogeneous nature of large-scale microservice architectures. Enhancing existing tools and creating new ones could significantly improve system management and performance analysis. Another area for exploration is the detailed study of request workflows, particularly focusing on their predictability and management in complex systems. Additionally, further research could investigate methods to mitigate the impact of obfuscating factors on microservice measurement, leading to more accurate and reliable performance data. Finally, exploring the roles and behaviors of non-conforming software entities within the architecture could deepen the overall understanding of their impact and contribution to the system
+
+Presenter: Zhaoqi Zhang
