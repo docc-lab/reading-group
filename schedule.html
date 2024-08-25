@@ -2,28 +2,6 @@
 layout: default
 title: "All Summaries"
 ---
-
-<!-- 
-<article>
-Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12:30-1:30pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
-</article>
--->
-
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
-
-
-
-<!-- 
-
----
-layout: default
-title: "Home"
----
-
 <html>
 
 <head>
@@ -36,10 +14,12 @@ title: "Home"
 </head>
 
 <body>
+  <!-- Insert the text here -->
   <article>
     Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12-1pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
   </article>
-
+  
+  <!-- The table content starts here -->
   <div class="table-container">
 <table class="center" style='margin: 5px;'>
   <tr>
@@ -50,22 +30,22 @@ title: "Home"
   <tr>
     <td>06/08/23</td>
     <td>Darby Huye</td>
-    <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications</a></td>
+    <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a></td>
   </tr>
   <tr>
     <td>06/15/23</td>
     <td>Zhaoqi Zhang</td>
-    <td><a href="https://www.usenix.org/conference/osdi22/presentation/huang-lexiang">Metastable Failures in the Wild</a></td>
+    <td><a href="https://www.usenix.org/conference/osdi22/presentation/huang-lexiang">Metastable Failures in the Wild, OSDI '22</a></td>
   </tr>
   <tr>
     <td>06/22/23</td>
     <td>Sarah Abowitz</td>
-    <td><a href="https://www.usenix.org/system/files/nsdi23-liu-david.pdf">Doing More with Less: Orchestrating Serverless Applications without an Orchestrator</a></td>
+    <td><a href="https://www.usenix.org/system/files/nsdi23-liu-david.pdf">Doing More with Less: Orchestrating Serverless Applications without an Orchestrator, NSDI '23</a></td>
   </tr>
   <tr>
     <td>06/29/23</td>
     <td>Tomislav Z-M</td>
-    <td><a href="https://www.usenix.org/conference/nsdi23/presentation/chen-yinfang">Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker</a></td>
+    <td><a href="https://www.usenix.org/conference/nsdi23/presentation/chen-yinfang">Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker, NSDI '23</a></td>
   </tr>
   <tr>
     <td>07/13/23</td>
@@ -75,12 +55,12 @@ title: "Home"
   <tr>
     <td>07/20/23</td>
     <td>Darby Huye</td>
-    <td><a href="https://arxiv.org/pdf/2210.04595.pdf">SampleHST: Efficient On-the-Fly Selection of Distributed Traces</a></td>
+    <td><a href="https://arxiv.org/pdf/2210.04595.pdf">SampleHST: Efficient On-the-Fly Selection of Distributed Traces, on arxiv '22</a></td>
   </tr>
   <tr>
     <td>08/17/23</td>
     <td>Zhaoqi Zhang</td>
-    <td><a href="https://www.usenix.org/conference/osdi23/presentation/ren">Relational Debugging --- Pinpointing Root Causes of Performance Problems</a></td>
+    <td><a href="https://www.usenix.org/conference/osdi23/presentation/ren">Relational Debugging --- Pinpointing Root Causes of Performance Problems, OSDI '23</a></td>
   </tr>
   <tr>
     <td>08/24/23</td>
@@ -95,7 +75,7 @@ title: "Home"
   <tr>
     <td>09/13/23</td>
     <td>Darby Huye</td>
-    <td><a href="https://www.usenix.org/conference/osdi18/presentation/sriraman">µTune: Auto-Tuned Threading for OLDI Microservices</a></td>
+    <td><a href="https://www.usenix.org/conference/osdi18/presentation/sriraman">µTune: Auto-Tuned Threading for OLDI Microservices, ODSI '18</a></td>
   </tr>
   <tr>
     <td>09/20/23</td>
@@ -105,19 +85,19 @@ title: "Home"
   <tr>
     <td>09/27/23</td>
     <td>Zhaoqi Zhang</td>
-    <td> <a href="https://www.usenix.org/conference/nsdi18/presentation/khalid">Iron: Isolating Network-based CPU in Container Environments </a>
+    <td> <a href="https://www.usenix.org/conference/nsdi18/presentation/khalid">Iron: Isolating Network-based CPU in Container Environments, NSDI '18 </a>
     </td>
   </tr>
     <tr>
     <td>10/04/23</td>
     <td>Max Liu</td>
-    <td><a href="https://www.usenix.org/system/files/sec21-li-xing.pdf">Automatic Policy Generation for Inter-Service Access Control of Microservices</a></td>
+    <td><a href="https://www.usenix.org/system/files/sec21-li-xing.pdf">Automatic Policy Generation for Inter-Service Access Control of Microservices, USENIX Security '21</a></td>
   </tr>
     <tr>
       <td>10/11/23</td>
       <td>Sarah Abowitz</td>
       <td><a href="https://dl.acm.org/doi/pdf/10.1145/3569902.3569916">Detecting DoS Attacks in Microservice Applications:
-        Approach and Case Study</a></td>
+        Approach and Case Study, LADC '22</a></td>
     </tr>
     <tr>
       <td>10/18/23</td>
@@ -132,37 +112,37 @@ title: "Home"
     <tr>
       <td>11/01/23</td>
       <td>Mona Ma</td>
-      <td><a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chow">The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, </a></td>
+      <td><a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chow">The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, OSDI '14</a></td>
     </tr>
     <tr>
       <td>11/13/23</td>
       <td>Zhaoqi Zhang</td>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3452296.3472888">Understanding host network stack overheads</a></td>
+      <td><a href="https://dl.acm.org/doi/abs/10.1145/3452296.3472888">Understanding host network stack overheads, SIGCOMM '21</a></td>
     </tr>
     <tr>
       <td>11/29/23</td>
       <td>Max Liu</td>
-      <td><a href="https://dl.acm.org/doi/pdf/10.1145/3600006.3613138">Blueprint: A Toolchain for Highly-Reconfigurable Microservices</a></td>
+      <td><a href="https://dl.acm.org/doi/pdf/10.1145/3600006.3613138">Blueprint: A Toolchain for Highly-Reconfigurable Microservices, SOSP '23</a></td>
     </tr>
     <tr>
       <td>12/06/23</td>
       <td>Sarah Abowitz</td>
-      <td><a href="https://dl.acm.org/doi/10.1145/3484266.3487380">Watching the watchmen: Least privilege for managed network services</a></td>
+      <td><a href="https://dl.acm.org/doi/10.1145/3484266.3487380">Watching the watchmen: Least privilege for managed network services, HotNets '21</a></td>
     </tr>
     <tr>
       <td>1/24/24</td>
       <td>Tomislav Zabcic-Matic</td>
-      <td><a href="https://ieeexplore.ieee.org/document/9460542">QoS-Aware and Resource Efficient Microservice Deployment in Cloud-Edge Continuum</a></td>
+      <td><a href="https://ieeexplore.ieee.org/document/9460542">QoS-Aware and Resource Efficient Microservice Deployment in Cloud-Edge Continuum, IPDPS '21</a></td>
     </tr>
     <tr>
       <td>1/31/24</td>
       <td>Darby Huye</td>
-      <td><a href="https://dl.acm.org/doi/10.1145/3611643.3613881">STEAM: Observability-Preserving Trace Sampling</a></td>
+      <td><a href="https://dl.acm.org/doi/10.1145/3611643.3613881">STEAM: Observability-Preserving Trace Sampling, ESEC/FSE '23</a></td>
     </tr>
     <tr>
       <td>2/07/24</td>
       <td>Mona Ma</td>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">LatenSeer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing</a></td>
+      <td><a href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">LatenSeer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing, SoCC '23</a></td>
     </tr>
     <tr>
       <td>2/14/24</td>
@@ -211,5 +191,6 @@ title: "Home"
 </html>
 
 
- -->
+
+
 
