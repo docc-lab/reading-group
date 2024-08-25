@@ -30,7 +30,10 @@ title: "Home"
   <tr>
     <td>06/08/23</td>
     <td>Darby Huye</td>
-    <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a></td>
+    <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a></td>      {% assign post = site.posts | where: "title", "Foxhound: Server-Grade Observability for Network-Augmented Applications" | first %}
+    {% if post %}
+    <a href="{{ post.url | relative_url }}">Summary</a>
+    {% endif %}
   </tr>
   <tr>
     <td>06/15/23</td>
