@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Home"
+---
+
+<!-- 
+<article>
+Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12:30-1:30pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
+</article>
+-->
+
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
