@@ -1,6 +1,27 @@
 ---
 layout: default
-title: "Schedule"
+title: "All Summaries"
+---
+
+<!-- 
+<article>
+Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12:30-1:30pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
+</article>
+-->
+
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
+
+
+
+<!-- 
+
+---
+layout: default
+title: "Home"
 ---
 
 <html>
@@ -15,12 +36,10 @@ title: "Schedule"
 </head>
 
 <body>
-  <!-- Insert the text here -->
   <article>
-    Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12:30-1:30pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
+    Weekly reading group hosted by <a href="https://docclab.cs.tufts.edu/">DOCC Lab</a> at Tufts University. Held on Wednesdays 12-1pm. If you have any interest in attending (in-person or remote), reach out to me at lan [DOT] liu [AT] tufts [DOT] edu.
   </article>
-  
-  <!-- The table content starts here -->
+
   <div class="table-container">
 <table class="center" style='margin: 5px;'>
   <tr>
@@ -113,7 +132,7 @@ title: "Schedule"
     <tr>
       <td>11/01/23</td>
       <td>Mona Ma</td>
-      <td><a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chow">The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services</a></td>
+      <td><a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chow">The Mystery Machine: End-to-end Performance Analysis of Large-scale Internet Services, </a></td>
     </tr>
     <tr>
       <td>11/13/23</td>
@@ -148,17 +167,17 @@ title: "Schedule"
     <tr>
       <td>2/14/24</td>
       <td>Zhaoqi Zhang</td>
-      <td><a href="https://ieeexplore.ieee.org/abstract/document/9590295?casa_token=2cO0LL7nwroAAAAA:EPnZP6QMt1cIQ0E-Mq7IPzEKuSavt2_HvpvV_PGXse_P28SOUxJQCn4eRdYNjWQ99yNKTete">Sieve: Attention-based Sampling of End-to-End Trace Data in Distributed Microservice Systems</a></td>
+      <td><a href="https://ieeexplore.ieee.org/abstract/document/9590295?casa_token=2cO0LL7nwroAAAAA:EPnZP6QMt1cIQ0E-Mq7IPzEKuSavt2_HvpvV_PGXse_P28SOUxJQCn4eRdYNjWQ99yNKTete">Sieve: Attention-based Sampling of End-to-End Trace Data in Distributed Microservice Systems, ICWS '21</a></td>
     </tr>
     <tr>
       <td>2/21/24</td>
       <td>Max Liu</td>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3492321.3519575">Unicorn: reasoning about configurable system performance through the lens of causality</a></td>
+      <td><a href="https://dl.acm.org/doi/abs/10.1145/3492321.3519575">Unicorn: reasoning about configurable system performance through the lens of causality, EuroSys '22</a></td>
     </tr>
     <tr>
       <td>3/27/24</td>
       <td>Mona Ma</td>
-      <td><a href="https://www.usenix.org/conference/atc16/technical-sessions/presentation/mace">Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems</a></td>
+      <td><a href="https://dl.acm.org/doi/10.1145/2815400.2815415">Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems, SOSP '15</a></td>
     </tr>
     <tr>
       <td>4/3/24</td>
@@ -191,4 +210,6 @@ title: "Schedule"
 
 </html>
 
+
+ -->
 
