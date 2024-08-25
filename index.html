@@ -102,8 +102,102 @@ title: "Home"
       {% endif %}    
     </td>   
   </tr>
-
-
+  <tr>
+    <td>3/27/24</td>
+    <td>Mona Ma</td>
+    <td><a href="https://dl.acm.org/doi/10.1145/2815400.2815415">Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems, SOSP '15</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Pivot'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>2/21/24</td>
+    <td>Max Liu</td>
+    <td><a href="https://dl.acm.org/doi/abs/10.1145/3492321.3519575">Unicorn: reasoning about configurable system performance through the lens of causality, EuroSys '22</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Unicorn'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>2/14/24</td>
+    <td>Zhaoqi Zhang</td>
+    <td><a href="https://ieeexplore.ieee.org/abstract/document/9590295?casa_token=2cO0LL7nwroAAAAA:EPnZP6QMt1cIQ0E-Mq7IPzEKuSavt2_HvpvV_PGXse_P28SOUxJQCn4eRdYNjWQ99yNKTete">Sieve: Attention-based Sampling of End-to-End Trace Data in Distributed Microservice Systems, ICWS '21</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Sieve'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>2/07/24</td>
+    <td>Mona Ma</td>
+    <td><a href="https://dl.acm.org/doi/abs/10.1145/3620678.3624787">LatenSeer: Causal Modeling of End-to-End Latency Distributions by Harnessing Distributed Tracing, SoCC '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'LatenSeer'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>1/31/24</td>
+    <td>Darby Huye</td>
+    <td><a href="https://dl.acm.org/doi/10.1145/3611643.3613881">STEAM: Observability-Preserving Trace Sampling, ESEC/FSE '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'STEAM'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>1/24/24</td>
+    <td>Tomislav Zabcic-Matic</td>
+    <td><a href="https://ieeexplore.ieee.org/document/9460542">QoS-Aware and Resource Efficient Microservice Deployment in Cloud-Edge Continuum, IPDPS '21</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Cloud-Edge Continuum'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>12/06/23</td>
+    <td>Sarah Abowitz</td>
+    <td><a href="https://dl.acm.org/doi/10.1145/3484266.3487380">Watching the watchmen: Least privilege for managed network services, HotNets '21</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'watchmen'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>11/29/23</td>
+    <td>Max Liu</td>
+    <td><a href="https://dl.acm.org/doi/pdf/10.1145/3600006.3613138">Blueprint: A Toolchain for Highly-Reconfigurable Microservices, SOSP '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Blueprint'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
 
 </table>
   </div>
