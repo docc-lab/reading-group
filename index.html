@@ -251,7 +251,7 @@ title: "Home"
     <td>Max Liu</td>
     <td><a href="https://www.usenix.org/system/files/sec21-li-xing.pdf">Automatic Policy Generation for Inter-Service Access Control of Microservices, USENIX Security '21</a></td>
     <td>
-      {% assign post = site.posts | where_exp: "post", "post.title contains 'Automatic Policy Generation'" | first %}
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'AutoArmor summary & discussion'" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
       {% else %}Unavailable
