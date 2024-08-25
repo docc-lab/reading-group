@@ -79,6 +79,18 @@ title: "Home"
     </td>   
   </tr>
   <tr>
+    <td>4/24/24</td>
+    <td>Tomislav Zabcic-Matic</td>
+    <td><a href="https://dl.acm.org/doi/10.1145/3597503.3639088">Trace-based Multi-Dimensional Root Cause Localization of Performance Issues in Microservice Systems, ICSE '24</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Trace-based Multi-Dimensional'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
     <td>4/10/24</td>
     <td>Zhaoqi Zhang</td>
     <td><a href="https://www.usenix.org/conference/atc23/presentation/huye">Lifting the veil on Meta's microservice architecture: Analyses of topology and request workflows, ATC '23</a></td>
@@ -108,6 +120,30 @@ title: "Home"
     <td><a href="https://dl.acm.org/doi/10.1145/2815400.2815415">Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems, SOSP '15</a></td>
     <td>
       {% assign post = site.posts | where_exp: "post", "post.title contains 'Pivot'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>3/13/24</td>
+    <td>Darby Huye</td>
+    <td><a href="https://www.usenix.org/system/files/atc21-weng.pdf">Argus: Debugging performance issues in modern desktop applications with annotated causal tracing, ATC '21</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Argus'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>3/06/24</td>
+    <td>Tomislav Zabcic-Matic</td>
+    <td><a href="https://dl.acm.org/doi/10.1145/3477132.3483577">Understanding and Detecting Software Upgrade Failures in Distributed Systems, SOSP '21</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Understanding and Detecting Software Upgrade'" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
       {% else %}Unavailable
@@ -223,10 +259,16 @@ title: "Home"
     </td>   
   </tr>
   <tr>
-    <td>10/18/23</td>
+    <td>10/16/23</td>
     <td>Tomislav Z-M</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="https://www.usenix.org/system/files/osdi21-rodrigues.pdf">CLP: Efficient and Scalable Search on Compressed Text Logs</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'CLP'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
   </tr>
   <tr>
     <td>10/25/23</td>
