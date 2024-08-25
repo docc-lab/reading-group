@@ -66,6 +66,44 @@ title: "Home"
       {% endif %}    
     </td>  
   </tr>
+  <tr>
+    <td>6/6/24</td>
+    <td>Max Liu</td>
+    <td><a href="https://dl.acm.org/doi/pdf/10.1145/3603269.3604815">Fathom: Understanding Datacenter Application Network Performance, SIGCOMM '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Fathom'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>4/10/24</td>
+    <td>Zhaoqi Zhang</td>
+    <td><a href="https://www.usenix.org/conference/atc23/presentation/huye">Lifting the veil on Meta's microservice architecture: Analyses of topology and request workflows, ATC '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Lifting'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+  <tr>
+    <td>4/3/24</td>
+    <td>Max Liu</td>
+    <td><a href="https://dl.acm.org/doi/pdf/10.1145/3600006.3613156">A Cloud-Scale Characterization of Remote Procedure Calls, SOSP '23</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'Cloud-Scale'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}    
+    </td>   
+  </tr>
+
+
 
 </table>
   </div>
