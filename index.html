@@ -275,7 +275,7 @@ title: "Home"
     <td>Mona Ma</td>
     <td><a href="https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf">END-TO-END ARGUMENTS IN SYSTEM DESIGN</a></td>
     <td>
-      {% assign post = site.posts | where_exp: "post", "post.title contains 'End-to-end'" | first %}
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'End-to-end summary & discussion'" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
       {% else %}Unavailable
