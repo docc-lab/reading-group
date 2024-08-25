@@ -34,7 +34,7 @@ title: "Home"
     <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a>
     </td>      
     <td>
-      {% assign post = site.posts | where: "path", "/_posts/2023-06-08-foxhound.md" | first %}
+      {% assign post = site.posts | where: "basename", "2023-06-08-foxhound" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
       {% else %}Unavailable
