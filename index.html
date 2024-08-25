@@ -33,13 +33,13 @@ title: "Home"
     <td>Darby Huye</td>
     <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a>
     </td>      
-    <td><a href="https://dl.acm.org/doi/abs/10.1145/3552326.3567502">Foxhound: Server-Grade Observability for Network-Augmented Applications, EuroSys '23</a>
+    <td>
       {% assign post = site.posts | where_exp: "post", "post.title contains 'Foxhound'" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
-      {% else %} Missing!
+      {% else %}Unavailable
       {% endif %}    
-    </td>    
+    </td>   
   </tr>
   <tr>
     <td>06/15/23</td>
