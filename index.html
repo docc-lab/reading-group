@@ -37,6 +37,8 @@ title: "Home"
       {% assign post = site.posts | where: "path", "/_posts/2023-06-08-foxhound.md" | first %}
       {% if post %}
       <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}
+      Summary not available
       {% endif %}
     </td>
   </tr>
