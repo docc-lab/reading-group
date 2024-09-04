@@ -29,6 +29,18 @@ title: "Home"
     <th>Summary</th>
   </tr>
   <tr>
+    <td>9/4/24</td>
+    <td>Tony Astolfi</td>
+    <td><a href="https://dspace.mit.edu/bitstream/handle/1721.1/143731/3485450.3485454.pdf">DBOS: A DBMS-oriented Operating System</a></td>
+    <td>
+      {% assign post = site.posts | where_exp: "post", "post.title contains 'DBOS'" | first %}
+      {% if post %}
+      <a href="{{ post.url | relative_url }}">Summary</a>
+      {% else %}Unavailable
+      {% endif %}
+    </td>
+  </tr>
+  <tr>
     <td>8/21/24</td>
     <td>Max Liu</td>
     <td>Teamwork</td>
